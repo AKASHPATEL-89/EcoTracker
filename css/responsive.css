@@ -1,0 +1,314 @@
+/* Responsive Design */
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+    .hero__title {
+        font-size: 4rem;
+    }
+    
+    .section__title {
+        font-size: 3rem;
+    }
+    
+    .features__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop */
+@media (max-width: 1024px) {
+    .hero__container {
+        gap: var(--space-3xl);
+    }
+    
+    .hero__title {
+        font-size: var(--font-size-5xl);
+    }
+    
+    .about__content {
+        gap: var(--space-3xl);
+    }
+    
+    .contact__content {
+        gap: var(--space-3xl);
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav__menu {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--color-white);
+        box-shadow: var(--shadow-lg);
+        padding: var(--space-xl);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--transition-normal);
+    }
+    
+    .nav__menu--active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav__list {
+        flex-direction: column;
+        gap: var(--space-lg);
+        text-align: center;
+    }
+    
+    .nav__toggle {
+        display: flex;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 80vh;
+        padding-top: 100px;
+    }
+    
+    .hero__container {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        text-align: center;
+    }
+    
+    .hero__title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .hero__buttons {
+        justify-content: center;
+    }
+    
+    /* About */
+    .about__content {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+        text-align: center;
+    }
+    
+    /* Contact */
+    .contact__content {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    /* Features */
+    .features__grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--space-xl);
+    }
+    
+    /* Gallery */
+    .gallery__grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--space-lg);
+    }
+    
+    /* Footer */
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    /* Base */
+    :root {
+        --container-padding: var(--space-lg);
+    }
+    
+    /* Typography */
+    .hero__title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .section__title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero__description {
+        font-size: var(--font-size-base);
+    }
+    
+    /* Spacing */
+    .hero,
+    .about,
+    .features,
+    .gallery,
+    .contact {
+        padding: var(--space-3xl) 0;
+    }
+    
+    /* Components */
+    .btn {
+        padding: var(--space-md) var(--space-lg);
+        min-width: 120px;
+        font-size: var(--font-size-sm);
+    }
+    
+    .hero__buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+    }
+    
+    .feature-card {
+        padding: var(--space-xl);
+    }
+    
+    .feature-card__icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .feature-card__img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Gallery */
+    .gallery__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .gallery__img {
+        height: 200px;
+    }
+    
+    /* Navigation improvements for mobile */
+    .nav__container {
+        padding: 0 var(--space-lg);
+    }
+    
+    .nav__logo-text {
+        font-size: var(--font-size-xl);
+    }
+    
+    /* Contact improvements */
+    .contact__item {
+        padding: var(--space-lg);
+    }
+    
+    .contact__social {
+        padding: var(--space-lg);
+    }
+    
+    /* Social links */
+    .social__links {
+        gap: var(--space-sm);
+    }
+    
+    .social__link {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .section__title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .features__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        padding: var(--space-lg);
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding-top: 80px;
+    }
+    
+    .hero__container {
+        gap: var(--space-xl);
+    }
+    
+    .hero__title {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero__img,
+    .about__img,
+    .gallery__img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+    /* This can be implemented if needed */
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .nav__toggle,
+    .hero__buttons,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: var(--space-lg) 0;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .section__title {
+        font-size: 18pt;
+        page-break-after: avoid;
+    }
+    
+    .feature-card,
+    .gallery__item {
+        page-break-inside: avoid;
+    }
+}
+
