@@ -2,8 +2,6 @@
 
 A professional, responsive website built entirely with HTML5 and CSS3, demonstrating modern web development skills and best practices. This project showcases a sustainable campus initiative called "EcoTracker" and serves as an excellent example of what can be achieved with fundamental web technologies.
 
-## 🌟 Live Demo
-
 ## 📋 Project Overview
 
 EcoTracker is a college project website that combines technical excellence with environmental consciousness. The site demonstrates proficiency in:
@@ -30,13 +28,6 @@ EcoTracker is a college project website that combines technical excellence with 
 - **BEM Methodology**: Consistent CSS naming conventions
 - **CSS Custom Properties**: Maintainable design system with CSS variables
 - **Mobile-First Approach**: Progressive enhancement for larger screens
-
-### 📱 Responsive Breakpoints
-- **Mobile**: 320px - 768px
-- **Tablet**: 768px - 1024px  
-- **Desktop**: 1024px+
-
-
 
 
 ## 👨‍💻 Author
